@@ -6,7 +6,7 @@ services:
     network_mode: host
     environment:
       - ROKU_IP=${ROKU_IP}
-      - PORT=3001
+      - PORT=3002
       - CORS_ORIGIN=*
       - NODE_ENV=production
     restart: unless-stopped
@@ -15,6 +15,9 @@ services:
     build:
       context: ui
       dockerfile: Dockerfile
+      args:
+        - VITE_BASE_PATH=/roku/
+        - VITE_API_URL=/roku/api/v1
     network_mode: host
     depends_on:
       - server
