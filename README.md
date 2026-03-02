@@ -200,3 +200,7 @@ or use of this software, in whole or in part, is strictly prohibited without the
 express written permission of GTM Enterprises LLC.
 
 See the [LICENSE](LICENSE) file for full terms.
+
+---
+
+&copy; 2024-2026 [GTM Enterprises LLC](https://gtmenterprisesllc.com)
