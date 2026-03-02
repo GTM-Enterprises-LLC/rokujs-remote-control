@@ -11,7 +11,9 @@
       "Bash(node -e \"const si = require\\(''/Users/steve/Code/Projects/rokujs/node_modules/react-icons/si/index.js''\\); console.log\\(Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''disney''\\)\\)\\)\")",
       "Bash(node -e \"const si = require\\(''/Users/steve/Code/Projects/rokujs/node_modules/react-icons/si/index.js''\\); console.log\\(Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''hulu''\\) || k.toLowerCase\\(\\).includes\\(''netflix''\\) || k.toLowerCase\\(\\).includes\\(''youtube''\\)\\)\\)\")",
       "Bash(curl -s http://localhost:3001/api/v1/apps)",
-      "Bash(node -e \":*)"
+      "Bash(node -e \":*)",
+      "Bash(git -C /Users/steve/Code/Projects/rokujs branch -m master main)",
+      "Bash(git -C /Users/steve/Code/Projects/rokujs branch)"
     ]
   }
 }
