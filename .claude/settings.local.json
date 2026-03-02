@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npm run dev)",
+      "Bash(curl -s http://localhost:3001/api/v1/status)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s --max-time 3 http://192.168.1.196:8060/)",
+      "Bash(node -e \"const si = require\\(''/Users/steve/Code/Projects/rokujs/ui/node_modules/react-icons/si/index.js''\\); const keys = Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''disney''\\)\\); console.log\\(keys\\)\")",
+      "Bash(node -e \"const si = require\\(''/Users/steve/Code/Projects/rokujs/node_modules/react-icons/si/index.js''\\); console.log\\(Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''disney''\\)\\)\\)\")",
+      "Bash(node -e \"const si = require\\(''/Users/steve/Code/Projects/rokujs/node_modules/react-icons/si/index.js''\\); console.log\\(Object.keys\\(si\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''hulu''\\) || k.toLowerCase\\(\\).includes\\(''netflix''\\) || k.toLowerCase\\(\\).includes\\(''youtube''\\)\\)\\)\")",
+      "Bash(curl -s http://localhost:3001/api/v1/apps)",
+      "Bash(node -e \":*)"
+    ]
+  }
+}

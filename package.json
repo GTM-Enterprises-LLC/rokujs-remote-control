@@ -1,0 +1,46 @@
+{
+  "name": "rokujs",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "rokujs": "./cli.js"
+  },
+  "workspaces": [
+    "server",
+    "ui"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=ui\"",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:ui": "npm run dev --workspace=ui",
+    "build": "npm run build --workspace=server && npm run build --workspace=ui",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GTM-Enterprises-LLC/rokujs-remote-control.git"
+  },
+  "keywords": [
+    "rokutv",
+    "roku",
+    "remote-control"
+  ],
+  "author": "Steve Senkus <steve@gtm-enterprises.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/GTM-Enterprises-LLC/rokujs-remote-control/issues"
+  },
+  "homepage": "https://github.com/GTM-Enterprises-LLC/rokujs-remote-control#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "async": "^2.1.2",
+    "colors": "^1.4.0",
+    "inquirer": "^7.0.2",
+    "node-ssdp": "^2.9.0",
+    "request": "^2.76.0",
+    "xml2js": "^0.5.0"
+  }
+}
