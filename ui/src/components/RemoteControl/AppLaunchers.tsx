@@ -1,4 +1,4 @@
-import { SiNetflix, SiYoutube, SiAmazonprime, SiHbo, SiParamountplus, SiApple, SiRoku } from 'react-icons/si';
+import { SiNetflix, SiYoutube, SiHbo, SiParamountplus, SiApple, SiRoku } from 'react-icons/si';
 import { FiMonitor, FiTv } from 'react-icons/fi';
 import { useRokuStore } from '../../store/roku-store';
 import { useRokuControl } from '../../hooks/useRokuControl';
@@ -6,7 +6,7 @@ import { useRokuControl } from '../../hooks/useRokuControl';
 // Match is case-insensitive against the app name returned by the Roku API
 const STREAMING_APPS = [
   { name: 'Netflix',           icon: <SiNetflix size={18} />,       bg: 'bg-red-700 hover:bg-red-600' },
-  { name: 'Prime Video',       icon: <SiAmazonprime size={18} />,   bg: 'bg-sky-700 hover:bg-sky-600' },
+  { name: 'Prime Video',       icon: <FiTv size={18} />,            bg: 'bg-sky-700 hover:bg-sky-600' },
   { name: 'HBO Max',           icon: <SiHbo size={18} />,           bg: 'bg-purple-800 hover:bg-purple-700' },
   { name: 'Hulu',              icon: <FiTv size={18} />,            bg: 'bg-green-700 hover:bg-green-600' },
   { name: 'Disney Plus',       icon: <FiTv size={18} />,            bg: 'bg-blue-700 hover:bg-blue-600' },
